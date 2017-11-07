@@ -2,7 +2,7 @@
 #include <stdio.h>
 int main()
 {
-   int num1, num2;
+   int num1, num2, max;
    printf("-----Inserisci due valori-----\n");
    printf("1) Valore = ");
    scanf("%d",&num1);
@@ -11,11 +11,12 @@ int main()
    printf("------------------------------\n");
    printf("\n----------Attenzione----------");
    printf("\nIl numero più grande e' = ");
-   if(num1>num2)
-	printf("%d",num1);
-   else
-	printf("%d",num2);
-  printf("\n------------------------------\n");
+
+   max=num1;
+   if(num2>max) max=num2;
+
+   printf("%d",max);
+   printf("\n------------------------------\n");
 
    return 0;
 }
